@@ -7,7 +7,7 @@ public class Car {
     private final int seats;
     private final boolean gps;
 
-    // Конструктор приватный — объект создаётся только через Builder
+
     private Car(Builder builder) {
         this.make = builder.make;
         this.model = builder.model;
@@ -18,7 +18,7 @@ public class Car {
         this.gps = builder.gps;
     }
 
-    // Builder (внутренний статический класс)
+
     public static class Builder {
         private String make;
         private String model;
